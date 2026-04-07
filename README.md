@@ -8,6 +8,7 @@ Start your Strapi application with autoReload enabled. [Learn more](https://docs
 
 ```
 npm run develop
+npm install mysql2 (jangan lupa ini dan buat database)
 # or
 yarn develop
 ```

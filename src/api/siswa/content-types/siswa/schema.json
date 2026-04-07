@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "siswas",
+  "info": {
+    "singularName": "siswa",
+    "pluralName": "siswas",
+    "displayName": "Siswa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nis": {
+      "type": "integer"
+    },
+    "kelas": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "input_aspirasis": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::input-aspirasi.input-aspirasi",
+      "mappedBy": "siswa"
+    }
+  }
+}

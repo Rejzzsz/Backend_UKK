@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gurus",
+  "info": {
+    "singularName": "guru",
+    "pluralName": "gurus",
+    "displayName": "Guru"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "sandi": {
+      "type": "string"
+    }
+  }
+}
